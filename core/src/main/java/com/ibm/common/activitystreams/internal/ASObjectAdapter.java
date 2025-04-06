@@ -236,7 +236,7 @@ public class ASObjectAdapter
       } else if (val.isJsonObject())
         builder.set(
           name, 
-          context.deserialize(
+         (Object) context.deserialize(
             val, 
             propMap.has(name) ? 
               propMap.get(name):
